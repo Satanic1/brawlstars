@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Уникальные челленджи</title>
+    <title>Челленджи</title>
     <!-- Стили остаются такими же, как в предыдущей версии -->
 </head>
 <style>
@@ -113,11 +113,16 @@
             height: 100%;
             width: 100%;
 }
-@media(max-width: 1000px)and(min-width: 700px){
-.top{ width: 100%;}
-.surf2, .surf3{
-    width: 50%;
-}}
+@media(min-width: 500px) and (max-width: 1000px){
+.mainsurf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top, .surf2, .surf3, .star1{
+    width: 100%
+}
+}
     </style>
 <body>
     <div class="bio">
