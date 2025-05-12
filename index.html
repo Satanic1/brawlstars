@@ -7,8 +7,41 @@
     <title class="star1">Биография игры Бравл старс </title>
     <link href="css/main.css" rel="stylesheet" type="text/css" />
     <style>
+.mainsurf{
+    display: flex;
+    justify-content: space-between;
+}
+.surf2{
+    background-color: white;
+    width: 600px;
+    height: 200px;
+    line-height: 200px;
+    border: 5px solid #6A1B9A;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+}
+.surf3{
+    background-color: white;
+    width: 600px;
+    height: 200px;
+    line-height: 200px;
+    border:5px solid #6A1B9A;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+}
+.top{
+    background-color: white;
+     height: 200px;
+    width: 45%;
+    margin: 0% 0% 0% 0%; 
+    text-align: center;
+    border-radius: 0px;
+    border: 5px solid #6A1B9A;
+}
         .form-example{
-            background-color: white;
+            background-color: #E6E6FA;
             color: black;
             height: 25%;
             width: 100%;
@@ -21,39 +54,30 @@
             display:flex;
             margin-left: 1700px;
         }
-        .top{
-            background-color: rgb(238, 231, 231);
-            height: 250px;
-            width: 500px;
-            margin: 0px 700Px;
-            border-radius: 75px;
-        }
-        .topp{
-            background-color:  white;
-        }
         .wiki{
             color:black;
             background-color: whitesmoke;
+            text-align: center;
         }
         .wikitext{
             background-color: white;
-            border-radius: 50px;
+            border: 5px solid #6A1B9A;
         }
         .mission{
             color:black;
             background-color: whitesmoke;
              }
         .missiontext{
-            background-color: white;
-            border-radius: 50px;
+            background-color: #E6E6FA;
+            border:1px soled black;
         }
         .game{
             color: black;
             background-color: whitesmoke;
         }
         .gametext{
-            background-color: white;
-            border-radius: 50px;
+            background-color: #E6E6FA;
+            border-radius: 0px;
         }
         .brawler{
             color: black;
@@ -64,12 +88,12 @@
             border-radius:50px;
         }
         .main{
-            background-color: whitesmoke;
+            background-color: #E6E6FA;
             color:black;
             height: 100%;
             width: 100%;
-            font-family: 'Times New Roman', Times, serif;
-            border-radius: 50px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 23px;
         }
         p{
             font-size:23px;
@@ -84,40 +108,44 @@
         }
         input[type='text']{
             height: 30px;
+            border: 5px solid #6A1B9A;
         }
         input[type='email']{
             height: 30px;
+            border: 5px solid #6A1B9A;
+
         }
         input[type='sumbit']{
             height: 30px;
             border-radius: 0px 0px 50px 50px;
+            border: 5px solid #6A1B9A;
         }
         input[type='sumbit1']{
             height: 30px;
             border-radius: 50px 50px 0px 0px;
+            border: 5px solid #6A1B9A;
+            margin-top: 5px;
         }
         .name{
             border-radius: 50px 50px 0px 0px;
         }
         .star1{
-            margin-left: 850Px;
-            
-            }
-        .star2{
-            margin-left: 860Px;
-            margin-right: 840px;
-            background-color: whitesmoke;
-            color: black;
-        }
-        .star2text{
+            margin-left: 0Px;
+            margin-right: 0px;
+            border: 5px solid #6A1B9A;
+            text-align: center;
             background-color: white;
-            border-radius: 50px;
+             }
+        .star2{
+            background-color: white;
+            text-align: center;
+            border: 5px solid #6A1B9A;
+            font-size: 30px;
         }
         .star3{
-            margin-left: 850Px;
-            margin-right: 850px;
-            background-color: whitesmoke;
-            color: black;
+            text-align: center;
+            border: 5px solid #6A1B9A;
+            background-color: white;
         }
         h2{
             background-color: white;
@@ -138,11 +166,23 @@
         a{
             text-decoration: none;
         }
+        @media(min-width: 700px) and (max-width: 1000px){
+.top{ width: 100%;}
+.surf2, .surf3{
+   width: 50%; 
+}}
     </style>
     <div  class="main">
 </head>
 <body>
     <div class="star1"> <h1 >Биография</h1>  </div>
+<div class="mainsurf">
+    <a href="page2.html"class="surf2">Бойцы</a>
+    <div class="top">
+        <img src="Images/i (1).webp" alt="1 изображение" width="300" height="200" title="сдал?"/>
+   </div>
+    <a href="page3.html" class="surf3">Челленджи</a>
+</div>
     <form action="" method="get" class="form-example"> 
         <div class="form-example">
             <input type="sumbit1" value="">
@@ -159,19 +199,13 @@
     <input type="sumbit" value="       Подтвердить">
 </div> 
     </form>
-    <div class="top">
-         <img src="Images/i (1).webp" alt="1 изображение" width="300" height="200" title="сдал?"/>
-    </div>
-    <div class="topp">
-          <a href="page2.html" class="star3">Подробнее про бойцов</a>
-    </div>
     <div class="wiki">
     <p class="wikitext"><b>Brawl Stars</b> — игра для мобильных устройств в жанрах MOBA и геройский шутер, разработанная и изданная финской компанией Supercell.Дата анонса	14 июня 2017. Глобальный релиз состоялся 12 декабря 2018 года.</p>
     </div>
 <div class="star2">
-    <p class="star2text">
+    <h3 class="star2text">
         <b>Игровой процесс</b>
-    </p>
+    </h3>
 </div>
 <div class="mission">
     <div class="missiontext">
@@ -214,31 +248,10 @@
        <p><b>Чемпионат (англ. Championship)</b> — данное событие начинается в начале года, и доступно раз в месяц до середины года, событие состоит из трёх этапов (испытание, квалификация и финал). За прохождение испытания команде полагается выход в квалификацию, после прохода которой команда может поучаствовать в финале ежемесячного отбора. Через полгода после начала события команды прошедшие в финал могут поучаствовать в мировом финале Чемпионата с денежными вознаграждениями.</p>
     </div>
 </div>
-    <div class="star4">
-       <h3><b>Бойцы</b></h3>
-    </div>
 <div class="brawler">
     <div class="brawlertext">
-    <p>На данный момент 90 бойцов и у всех бойцов есть класс.Такие как танки, убийцы, поддержка, контроль, урон, стрелки, артиллерия.</p>
-    <P><b>Танки</b>: Булл, Роза, Эль примо, Дерилл, Джекки, Фрэнк, Биби, Эш, Хэнк, Бастер, Олли, Мэг, Драко.</P>
-    <p><b>Убийцы</b>: Сту, Эдгар, Сэм, Шейд, Мортис, Базз, Фэнг, Мико, Меллоди, Лили, Ворон, Леон, Корделиус, Кэндзи.</p>
-    <p><b>Поддержка</b>: Поко, Гас, Пэм, Берри, Макс, Байрон, Гавс, Грэй, Даг, Кит,Жу-Йонг.</p>
-    <p><b>Контроль</b>: Джесси, Пенни, Бо, Эмз, Грифф, Гэйл, Мипл, Джин, Мистер П., Скуик, Лу, Отис, Виллоу, Чак, Чарли, Финкс, Сэнди, Амбер.</p>
-    <p><b>Урон</b>: Шелли, Нита, Кольт, 8-бит, Рико, Карл, Коллет, Лола, Пёрл, Тара, Ева, R-T, Клэнси, Мо, Спайк, Вольт, Честер, Луми.</p>
-    <p><b>Стрелки</b>: Брок, Пайпер, Беа, Нани, Бонни, Бэлль, Мэнди, Мейси, Анджело, Джанет.</p>
-    <p><b>Артиллерия</b>: Барли, Динамайк, Тик, Гром, Ларри и Лори, Спраут, Джуджу.</p>
-    <p><b>Танки</b>- У них среднея, высокая и очень высокая скорость предвижения, урон средний, так же у них много здоровья, чтобы танковать или идти на таран.</p>
-    <p><b>Убийцы</b>- у них среднея, высокая и очень высокая скорость передвижения, урон высокий, здоровье среднее и высокое, но у них есть атаки или способности, которые им помогают быстрее передвигаться, из-за этого им легче донать цель и устранить их.Здоровье у них среднее, урон высокий.</p>
-    <p><b>Поддержка</b>- у них нормальная и очень высокая скорость передвижения, урон средний, здоровье среднее и высокое, могут давать здоровье, щит, скорость своими атаками или способностями.</p>
-    <p><b>Контроль</b>- у них нормальная и высокая скорость передвижения, урон средний, здоровье среднее, могут поджечь, застанить, замедлить бойцов или их атаки, манипулировать и ставить турели и мины, чтобы отвлечь на себя ынимания для бойцов по команде.</p>
-    <P><b>Урон</b>- у них очень низкая,маленькая, нормальня и высокая скорость передвижения, здоровье среднее, высокое и очень высокое, очень хороший многновеный урон.</P>
-    <p><b>Стрелки</b>-у них низкая, нормальная и очень высокая скорость, обладают хорошим урон, здоровье среднее и высокое, особенность в их дальности атаки.</p>
-    <p><b>|Артиллерия или метатели</b>- у них нормальная и высокая скорость передвижения, урон средний, здоровье малое и среднее особенность они могут атаковать через стены.</p>
     </div>
 </div>
-
-
-    <h4></h4>
 </body>
 </div>
 </html>
